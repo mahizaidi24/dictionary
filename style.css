@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EC5FC;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    flex-direction: column;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+
+.result {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.word {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.word button{
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.inp-word {
+
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    padding: 15px;
+    width: 350px;
+    outline: none;
+}
+
+.inp-word:hover {
+    outline: none;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    padding: 17px;
+    border-color: #17C3B2;
+    border-width: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.searchbtn {
+    padding: 12px;
+    width: 130px;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+
+.searchbtn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.searchbtn:hover::before {
+    width: 105%;
+}
+
+.searchbtn:hover {
+    color: #111;
+}
+.inputword{
+   
+}
